@@ -3,7 +3,7 @@ document.getElementById("reset-btn").addEventListener("click", function() {
 });
 
 
-
+document.getElementById("1rm-run-btn").addEventListener("click",calculateFromOneRm);
 document.getElementById("eight-rep-run-btn").addEventListener("click",calculateFromEightRep);
 document.getElementById("one-rep-run-btn").addEventListener("click",calculateFromOneRep);
 document.getElementById("seven-rep-run-btn").addEventListener("click",calculateFromSevenRep);
@@ -12,6 +12,11 @@ document.getElementById("six-rep-run-btn").addEventListener("click",calculateFro
 document.getElementById("three-rep-run-btn").addEventListener("click",calculateFromThreeRep);
 document.getElementById("five-rep-run-btn").addEventListener("click",calculateFromFiveRep);
 document.getElementById("four-rep-run-btn").addEventListener("click",calculateFromFourRep);
+
+
+function calculateFromOneRm(){
+    bulgarianFormulae(Math.round(document.getElementById("1rm").value));
+}
 
 function calculateFromEightRep(){
     bulgarianFormulae(Math.round(document.getElementById("eight-rep").value / 0.6));
