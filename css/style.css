@@ -102,3 +102,10 @@
 #reset-btn{
   margin-top: 1em;
 }
+
+.themed-grid-col {
+  display: flex;
+  font-size: medium;
+  align-items: center;
+  justify-content: center;
+}
